@@ -1,0 +1,30 @@
+.ProjectThumbnail:hover img{
+    filter: brightness(55%);
+}
+
+.ProjectThumbnail h1{
+    position: relative;
+    bottom: 80px;
+    opacity: 0;
+    font-size: 30px;
+    text-align: center;
+ }
+ 
+
+.ProjectThumbnail:hover h1{
+    filter: brightness(100%);
+   opacity: 1;
+   color: white;
+}
+
+.ProjectThumbnail{
+    width:  100%;
+    height: 100%;
+
+
+}
+.ProjectThumbnail img{
+    width:  inherit;
+    height:  inherit;
+
+}
