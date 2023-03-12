@@ -1,0 +1,13 @@
+.down {
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.Name {
+    text-align: center;
+}
+
+* {
+    padding-left: 50px;
+    color: white;
+}

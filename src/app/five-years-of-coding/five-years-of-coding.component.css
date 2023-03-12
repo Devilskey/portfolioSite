@@ -1,0 +1,59 @@
+.down {
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.yearone {
+    padding-top: 20px;
+    background-color: #b84752;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+.yeartwo {
+    padding-top: 20px;
+    background-color: #bd5142;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.yearthree {
+    padding-top: 20px;
+    background-color: #c1693e;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.yearfour {
+    padding-top: 20px;
+    background-color: #cf7e30;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.yearfive {
+    padding-top: 20px;
+    background-color: #db6613;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.yearsix {
+    padding-top: 20px;
+    background-color: #e2490d;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+* {
+    color: whitesmoke;
+    text-align: center;
+}
+
