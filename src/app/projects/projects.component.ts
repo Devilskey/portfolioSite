@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { post } from '../interfaces/Post';
+import { SetupVar } from '../Setup';
 
 @Component({
   selector: 'app-projects',
@@ -13,10 +14,9 @@ export class ProjectsComponent {
   postAmount: number = 0;
 
   constructor(private http: HttpClient){
-    http.get<any>("http://127.0.0.1:5244/PostManager").subscribe((data:string) => {
+    http.get<any>("http://"+ SetupVar.api +":5244/PostMenuSite").subscribe((data:string) => {
       this.posts = data;
       this.postAmount = data.length;
     });
   }
-
 }

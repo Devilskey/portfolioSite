@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MailSend } from '../snackbarComponent/SnackBarComp';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { SetupVar } from '../Setup';
 
 
 @Component({
@@ -25,7 +26,7 @@ export class HomePageComponent {
     this.snackBar.openFromComponent(MailSend, {
       duration: 1000,
     });
-    this.http.post<any>("http://212.227.171.244:5244/Site/ContactForm", {name: this.contactname, Subject: this.contactSubject, Body: this.contactBody}).subscribe(() => {
+    this.http.post<any>("http://"+ SetupVar.api +":5244Site/ContactForm", {name: this.contactname, Subject: this.contactSubject, Body: this.contactBody}).subscribe(() => {
       this.Succes = "Mail succesfully sended"
   })
   }
