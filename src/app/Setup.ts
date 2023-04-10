@@ -1,3 +1,3 @@
 export class SetupVar { 
-    public static api:string = "127.0.0.1";
+    public static api:string = "81.173.115.111";
 }
