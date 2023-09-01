@@ -10,6 +10,7 @@ export class ProjectItemComponent {
   @Input()  Linkid:any = "";
   @Input()  Title:any = "";
   @Input()  imgSrc:SafeUrl = ""
+  @Input()  Tags:any = "";
   PostLink:string = "";
   
   constructor(public domSanitizer: DomSanitizer) { 

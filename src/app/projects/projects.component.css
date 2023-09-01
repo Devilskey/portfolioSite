@@ -1,7 +1,11 @@
+
 .UnderNavbar{
     padding-top: 75px;
 }
+
+@media only screen and (min-width: 768px) {
 .ProjectGrid{
     display: grid;
     grid-template-columns: repeat(5, minmax(100px, 1fr));
+}
 }

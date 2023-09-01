@@ -1,3 +1,5 @@
+@media only screen and (min-width: 768px) {
+
 .ProjectThumbnail:hover img{
     filter: brightness(55%);
 }
@@ -5,26 +7,76 @@
 .ProjectThumbnail h1{
     position: relative;
     bottom: 80px;
-    opacity: 0;
     font-size: 30px;
     text-align: center;
+    color: white;
+
  }
  
+ .ProjectThumbnail h3{
+    position: relative;
+    bottom: 80px;
+    font-size: 18px;
+    text-align: center;
+    color: lightgray;
 
-.ProjectThumbnail:hover h1{
-    filter: brightness(100%);
-   opacity: 1;
-   color: white;
-}
+ }
+
 
 .ProjectThumbnail{
     width:  100%;
     height: 100%;
-
-
+    text-decoration-line: none;
 }
 .ProjectThumbnail img{
     width:  inherit;
     height:  inherit;
 
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .ProjectThumbnail{
+        width: 100%;
+        height: 400px;
+        text-decoration-line: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+    }
+
+.ProjectThumbnail:hover img{
+    filter: brightness(55%);
+}
+
+.BlackBackground{
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.ProjectThumbnail h1{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 5px;
+ }
+ 
+ .ProjectThumbnail h3{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 5px;
+ }
+
+
+.ProjectThumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 }

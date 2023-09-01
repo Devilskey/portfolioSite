@@ -1,7 +1,7 @@
 <section class="UnderNavbar">
     <div class="ProjectGrid">
         <div *ngFor="let post of posts">
-            <app-project-item [Linkid]="'/post/' + post.postId" [Title]="post.PostTitle" [imgSrc]="post.thumbnail"></app-project-item>
+            <app-project-item [Linkid]="'/post/' + post.postId" [Title]="post.PostTitle" [imgSrc]="post.thumbnail" [Tags]="post.PostTag"></app-project-item>
         </div>
     </div>
 </section>
