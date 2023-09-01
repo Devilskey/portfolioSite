@@ -26,7 +26,7 @@ export class HomePageComponent {
     this.snackBar.openFromComponent(MailSend, {
       duration: 1000,
     });
-    this.http.post<any>("http://"+ SetupVar.api +":5244Site/ContactForm", {name: this.contactname, Subject: this.contactSubject, Body: this.contactBody}).subscribe(() => {
+    this.http.post<any>("http://"+ SetupVar.api +":5244/SendContact", {name: this.contactname, Subject: this.contactSubject, Body: this.contactBody}).subscribe(() => {
       this.Succes = "Mail succesfully sended"
   })
   }
